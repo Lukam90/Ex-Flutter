@@ -13,12 +13,17 @@ flutter doctor
 **Init**
 
 flutter create ninjapp<br>
-flutter create quotes
+flutter create quotes<br>
+flutter create world_time
 
 **Run**
 
 flutter run
 
+**Packages**
+
+flutter pub add http
+
 ***
 
-16/35
+27/35
