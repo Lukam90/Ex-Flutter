@@ -12,7 +12,8 @@ flutter doctor
 
 **Init**
 
-flutter create ninjapp
+flutter create ninjapp<br>
+flutter create quotes
 
 **Run**
 
@@ -23,8 +24,8 @@ flutter run
 |||
 |-|-|
 13/03|x
-14/03|10
-15/03|15
+14/03|x
+15/03|x
 16/03|20
 17/03|25
 18/03|30
