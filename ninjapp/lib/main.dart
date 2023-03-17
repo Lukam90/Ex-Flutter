@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(
-    MaterialApp(
+    const MaterialApp(
       home: NinjaCard(),
     ),
   );
@@ -12,10 +12,10 @@ class NinjaCard extends StatefulWidget {
   const NinjaCard({super.key});
 
   @override
-  _NinjaCardState createState() => _NinjaCardState();
+  NinjaCardState createState() => NinjaCardState();
 }
 
-class _NinjaCardState extends State<NinjaCard> {
+class NinjaCardState extends State<NinjaCard> {
   int ninjaLevel = 0;
 
   @override
@@ -23,7 +23,7 @@ class _NinjaCardState extends State<NinjaCard> {
     return Scaffold(
       backgroundColor: Colors.grey[900],
       appBar: AppBar(
-        title: Text("Ninja ID Card"),
+        title: const Text("Ninja ID Card"),
         centerTitle: true,
         backgroundColor: Colors.grey[850],
         elevation: 0,
@@ -34,15 +34,15 @@ class _NinjaCardState extends State<NinjaCard> {
             ninjaLevel += 1;
           });
         },
-        child: Icon(Icons.add),
         backgroundColor: Colors.grey[800],
+        child: const Icon(Icons.add),
       ),
       body: Padding(
-        padding: EdgeInsets.fromLTRB(30, 40, 30, 0),
+        padding: const EdgeInsets.fromLTRB(30, 40, 30, 0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            Center(
+            const Center(
               child: CircleAvatar(
                 backgroundImage: AssetImage("assets/thumb.jpg"),
                 radius: 40,
@@ -52,14 +52,14 @@ class _NinjaCardState extends State<NinjaCard> {
               height: 90,
               color: Colors.grey[800],
             ),
-            Text(
+            const Text(
               "Name",
               style: TextStyle(
                 color: Colors.grey,
                 letterSpacing: 2,
               ),
             ),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             Text(
               "Chun-Li",
               style: TextStyle(
@@ -69,15 +69,15 @@ class _NinjaCardState extends State<NinjaCard> {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            SizedBox(height: 30),
-            Text(
+            const SizedBox(height: 30),
+            const Text(
               "Current Ninja Level",
               style: TextStyle(
                 color: Colors.grey,
                 letterSpacing: 2,
               ),
             ),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             Text(
               "$ninjaLevel",
               style: TextStyle(
@@ -87,14 +87,14 @@ class _NinjaCardState extends State<NinjaCard> {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            SizedBox(height: 30),
+            const SizedBox(height: 30),
             Row(
               children: <Widget>[
                 Icon(
                   Icons.email,
                   color: Colors.grey[400],
                 ),
-                SizedBox(width: 10),
+                const SizedBox(width: 10),
                 Text(
                   "chun.li@thenetninja.co.uk",
                   style: TextStyle(
