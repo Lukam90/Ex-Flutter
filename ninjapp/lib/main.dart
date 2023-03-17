@@ -17,10 +17,10 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.red[600],
       ),
-      body: Center(
-        child: Image(
-          image: AssetImage("assets/space-1.jpg"),
-        ),
+      body: Container(
+        padding: EdgeInsets.all(20),
+        color: Colors.grey[400],
+        child: Text("hello"),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
